@@ -1,0 +1,128 @@
+.container {
+    padding: 20px;
+}
+
+.header {
+    font-size: 18px;
+    color: #881CDD;
+    display: flex;
+}
+
+.back-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    font-size: 2.4rem;
+    margin-left: 0.5rem;
+    cursor: pointer;
+}
+
+.content-container {
+    margin-top: 5rem;
+}
+
+.form-detail {
+    max-width: 500px;
+    background-color: #F4E7FF;
+    padding: 25px 50px 30px;
+    border-radius: 20px;
+    margin: auto auto;
+}
+
+.form-title {
+    color: #881CDD;
+    font-size: 2.2rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.form-item {
+    margin-top: 1.5rem;
+}
+
+.item-heading {
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.item-input {
+    padding: 10px;
+
+    &.large {
+        width: 100%;
+    }
+}
+
+.sub-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+}
+
+.sub-item {
+    width: 47%;
+    input {
+        width: 100%;
+    }
+}
+
+input, textarea {
+    border: none;
+    outline: none;
+}
+
+.container-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3.5rem;
+
+    .btn {
+        min-width: 10rem;
+        padding: 0.8rem 1.2rem;
+        border-radius: 15px;
+        border: 2px solid #DBAEFF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+
+        &+ .btn {
+            margin-left: 2rem;
+        }
+    }
+
+    .btn-submit {
+        background-color: #DBAEFF;
+        color: #881CDD;
+        cursor: pointer;
+        .text-btn {
+            margin-left: 8px;
+            font-size: 1.8rem;
+            background-color: transparent;
+            color: #881CDD;
+            cursor: pointer;
+        }
+    }
+
+    .btn-deny {
+        background-color: #fff;
+        color: #AE5EED;
+        cursor: pointer;
+        .text-btn {
+            margin-left: 8px;
+            font-size: 1.8rem;
+            background-color: transparent;
+            color: #AE5EED;
+            cursor: pointer;
+        }
+    }
+
+    
+}
+
+

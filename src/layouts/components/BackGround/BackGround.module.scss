@@ -1,0 +1,48 @@
+.wrapper {
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+.full-screen-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.top-container {
+    position: relative;
+}
+
+.top-image {
+    width: 20%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0deg);
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    animation: spin 2s linear infinite;
+    z-index: 9999;
+}
+
+.btnMatching {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: 10%;
+    transform: translateX(-50%);
+}
+
+@keyframes spin {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}

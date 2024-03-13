@@ -1,0 +1,17 @@
+.content {
+    max-width: 281px;
+    text-align: center;
+}
+
+.footer {
+    margin-top: 5px;
+    .btn-yes,
+    .btn-no {
+        background-color: #f882c1;
+        color: #fff;
+    }
+
+    .btn-yes {
+        margin-right: 55px;
+    }
+}

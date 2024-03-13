@@ -1,0 +1,36 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 145%;
+    max-height: min(100vh - 96px - 60px, 734px);
+    /* min-height: 100px; */
+    padding: 10px 10px 0 10px;
+    // border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 12px;
+}
+
+.wrapper:last-child {
+    padding-bottom: 10px;
+}
+
+.primary {
+    background-color: #fff;
+    // border: 1px solid #ff97ce;
+    width: 270px;
+}
+
+// .primary:last-child {
+//     padding-bottom: 10px;
+// }
+
+.disable {
+    // background-color: #dbcbd6;
+    // border: 1px solid #ff97ce;
+    width: 270px;
+}
+
+.noti-wrapper-scroll {
+    max-height: 300;
+    overflow-y: auto;
+}

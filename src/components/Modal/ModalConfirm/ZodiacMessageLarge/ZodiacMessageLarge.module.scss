@@ -1,0 +1,53 @@
+.wrapper-container {
+    min-width: 350px;
+    background-color: #F4E7FF;
+    padding: 25px 20px 15px;
+    border-radius: 20px;
+    margin: 0 auto;
+}
+
+.content-header {
+    color: #881CDD;
+    font-size: 2.2rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.item-field {
+    margin-top: 1.5rem;
+}
+
+.item-heading {
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.item-input {
+    padding: 10px;
+    width: 100%;
+    outline: none;
+    border: none;
+}
+
+.item-btn {
+    min-width: 10rem;
+    padding: 0.8rem 1.2rem;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    background-color: #cc9bf3;
+    cursor: pointer;
+}
+
+.btn-submit {
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+}
+
+.disabled {
+    pointer-events: none;
+    opacity: 0.8;
+}

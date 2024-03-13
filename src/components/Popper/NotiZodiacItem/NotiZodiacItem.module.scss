@@ -1,0 +1,55 @@
+.wrapper {
+    display: flex;
+    background: #ffe6f7;
+    border-radius: 5px;
+    padding: 5px;
+    // align-items: center;
+
+    &:hover {
+        background-color: #ffdaf1;
+    }
+
+    + .wrapper {
+        margin-top: 8px;
+    }
+
+    img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 1px solid #f51663;
+        margin-right: 5px;
+    }
+
+    .noti-container {
+        display: flex;
+    }
+
+    .nick-name {
+        margin-right: 5px;
+        font-size: 14px;
+    }
+
+    .noti-content {
+        font-weight: 400;
+        font-size: 12px;
+    }
+
+    .time {
+        font-size: 10px;
+        color: #998391;
+        font-weight: 300;
+        float: right;
+    }
+
+    &.readNotif {
+        background-color: #dbcbd6;
+    }
+}
+
+.asRead {
+    background-color: #dbcbd680;
+    &:hover {
+        background-color: rgb(219 203 214 / 29%);
+    }
+}

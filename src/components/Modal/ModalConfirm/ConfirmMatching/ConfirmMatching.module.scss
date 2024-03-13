@@ -1,0 +1,25 @@
+.wrapper {
+    padding: 0 30px;
+}
+
+.btn.btn-ok + .btn.btn-cancel {
+    margin-top: 0px;
+    margin-left: 15px;
+}
+
+.btn-ok.btn,
+.btn-cancel.btn {
+    font-weight: 600;
+    color: #fff;
+    background-color: #f882c1;
+    margin-top: 0;
+}
+
+.btn-ok {
+    margin-right: 73px;
+}
+
+.footer {
+    display: flex;
+    margin-top: 20px;
+}

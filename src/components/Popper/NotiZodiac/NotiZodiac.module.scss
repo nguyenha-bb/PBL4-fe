@@ -1,0 +1,43 @@
+.icon-header {
+    height: 100%;
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+
+    .count-circle {
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        background: #fc0f0f;
+        border-radius: 50%;
+        top: 1%;
+        right: 7%;
+
+        text-align: center;
+        font-size: 10px;
+        font-weight: 600;
+        color: #fff;
+    }
+}
+
+.noti-footer {
+    padding-top: 5px;
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    align-items: center;
+}
+
+.noti-btn-action {
+    background-color: transparent;
+    justify-content: left;
+    font-weight: 600;
+    color: rgba(188, 10, 70, 0.7215686275);
+    cursor: pointer;
+    .left {
+        padding-right: 5px;
+    }
+}

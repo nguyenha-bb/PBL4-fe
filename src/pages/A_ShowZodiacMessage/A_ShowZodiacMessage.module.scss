@@ -1,0 +1,113 @@
+.wrapper {
+    position: absolute;
+    height: 100%;
+    width: 75%;
+    z-index: -1;
+
+    .header {
+        padding: 22px;
+        color: #8a35ce;
+    }
+}
+
+.container {
+    padding: 0 20px 20px 20px;
+    .title-container {
+        display: flex;
+        font-weight: 500;
+        justify-content: space-between;
+        padding-bottom: 20px;
+
+        .filter-time {
+            display: flex;
+            align-items: center;
+            padding-left: 70px;
+
+            .input-date-from,
+            .input-date-to {
+                border: 1px solid #cc8dfe;
+                color: #8022d2;
+                margin: 0 10px;
+                padding: 5px;
+            }
+        }
+    }
+    .content-container {
+        display: flex;
+        flex-direction: column;
+        .main-content {
+            padding: 0 70px;
+            .content-row {
+                display: flex;
+                justify-content: space-between;
+
+                padding: 13px 10px;
+                background: #f4e7ff;
+                border-radius: 5px;
+                font-weight: 500;
+                border-left: 7px solid #cc8dfe;
+                box-shadow: 0 4px 3px rgba(0, 0, 0, 0.1);
+
+                .zodiac-name {
+                    width: 50px;
+                }
+
+                .content-value {
+                    width: 200px;
+                }
+                .btn-action {
+                    color: #881cdd;
+                    cursor: pointer;
+                }
+
+                + .content-row {
+                    margin-top: 10px;
+                }
+
+                &:hover {
+                    background-color: rgb(223 193 248 / 58%);
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .pagination {
+            display: flex;
+            margin-top: 20px;
+            justify-content: center;
+
+            .btn {
+                background-color: #f4e7ff;
+                padding: 7px;
+                width: 87px;
+                display: flex;
+                justify-content: center;
+                font-weight: 500;
+                font-size: 15px;
+                cursor: pointer;
+
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
+
+            .disabled {
+                opacity: 0.5;
+                pointer-events: none;
+            }
+
+            .current-page {
+                width: 50px;
+                background-color: #cc8dfe99;
+                color: #fff;
+            }
+        }
+    }
+}
+
+.content-value {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 205px;
+    overflow: hidden;
+}

@@ -1,0 +1,14 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 100%;
+    display: flex;
+    padding: 0;
+}
+
+.content {
+    flex: 1;
+}

@@ -1,0 +1,32 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+
+    + .wrapper {
+        margin-top: 10px;
+    }
+    .title-input {
+        background-image: linear-gradient(to right, #f51460, #fa70d7);
+        background-clip: text;
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        font-weight: 600;
+        font-size: 15px;
+        width: 250px;
+    }
+    .input {
+        background-image: linear-gradient(to right, #f51460, #fa70d7);
+        padding: 0 8px;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        input {
+            background: transparent;
+            padding: 12px 10px;
+            width: 100%;
+            color: #fff;
+        }
+    }
+}

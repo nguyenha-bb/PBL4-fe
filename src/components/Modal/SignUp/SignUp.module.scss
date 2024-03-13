@@ -1,0 +1,163 @@
+.wrapper-form {
+    padding: 30px;
+}
+
+.sigup-container {
+    display: flex;
+    flex-direction: row;
+
+    .left-side {
+        margin-right: 20px;
+    }
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+
+    + .wrapper {
+        margin-top: 10px;
+    }
+    .title-input {
+        background-image: linear-gradient(to right, #f51460, #fa70d7);
+        background-clip: text;
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        font-weight: 600;
+        font-size: 15px;
+        width: 250px;
+    }
+    .input {
+        background-image: linear-gradient(to right, #f51460, #fa70d7);
+        padding: 0 8px;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding-right: 20px;
+        input,
+        select {
+            background: transparent;
+            padding: 12px 10px;
+            width: 100%;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .eye {
+            cursor: pointer;
+        }
+
+        .input-date {
+            padding: 10px 0 10px 10px;
+        }
+    }
+}
+
+// input[type='date']::-webkit-calendar-picker-indicator {
+//     display: none;
+// }
+
+// input[type='date']::-ms-clear {
+//     display: none;
+// }
+
+select option {
+    padding: 8px;
+    background-color: #fff;
+    color: #333;
+    font-size: 16px;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+
+    &:hover {
+        background-color: #f51460;
+    }
+}
+
+.modal-header {
+    display: flex;
+    justify-content: center;
+    padding: 0 24px;
+    height: 72px;
+    align-items: center;
+
+    .header-title {
+        text-transform: uppercase;
+        background-image: linear-gradient(to right, #f51460, #fa70d7);
+        background-clip: text;
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    }
+}
+.forgot-password {
+    margin-top: 5px;
+    font-size: 12px;
+    color: #f51460;
+    text-align: end;
+    cursor: pointer;
+}
+
+.signup-error {
+    font-size: 14px;
+    color: #e44a3e;
+}
+
+.footer {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+}
+
+.another-way {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    .title {
+        font-size: 13px;
+        color: #616161;
+        text-align: center;
+    }
+
+    .two-way {
+        display: flex;
+        margin-top: 10px;
+        .facebook,
+        .gmail {
+            width: 30px;
+            height: 30px;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        .facebook {
+            background: #3b5a98;
+            margin-right: 8px;
+        }
+
+        .gmail {
+            background: #eb4235;
+        }
+    }
+}
+
+.request {
+    margin-top: 10px;
+    font-size: 14px;
+
+    .signup-request {
+        margin-left: 5px;
+        color: #f51460;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,156 @@
+.wrapper {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 100px;
+    padding: 9px 16px;
+    font-weight: 700;
+    font-size: 1.6rem;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: var(--white);
+    border: 1px solid transparent;
+    user-select: none;
+
+    + .wrapper {
+        margin-top: 20px;
+    }
+
+    &.disabled {
+        pointer-events: none;
+        opacity: 0.5;
+    }
+
+    &:hover {
+        opacity: 0.9;
+    }
+}
+
+.icon + .title,
+.title + .icon {
+    margin-left: 8px;
+    min-width: fit-content;
+}
+
+.icon {
+    display: flex;
+    width: 24px;
+    text-align: center;
+}
+
+.rounded {
+    border-radius: 999px;
+    box-shadow: 0 2px 8px rgba(0 0 0 / 6%);
+    border-color: rgba(22, 24, 35, 0.12);
+
+    &:hover {
+        border-color: rgba(22, 24, 35, 0.2);
+        background-color: rgba(22, 24, 35, 0.03);
+    }
+}
+
+.normal {
+    background-color: #e49bb8;
+    font-weight: 400;
+    padding: 12px 16px;
+
+    // &:hover {
+    //     border-color: rgba(22, 24, 35, 0.2);
+    //     background-color: rgba(22, 24, 35, 0.03);
+    // }
+}
+//Button types
+.primary,
+.primary_admin {
+    background-color: #8022d2;
+    color: #fff;
+    padding: 12px 16px;
+    // &:hover {
+    //     border-color: var(--primary);
+    //     background: linear-gradient(0deg, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.06)), #fe2c55;
+    // }
+}
+
+.primary_admin {
+    font-weight: 400;
+    background-color: #cc8dfe;
+}
+
+.post {
+    background-color: #fdd1e8;
+    width: 100%;
+
+    .icon {
+        color: #f73e7e;
+    }
+
+    + .post {
+        margin-top: 8px;
+    }
+}
+
+.home {
+    background-image: linear-gradient(#f50d57, #fc82f0);
+    color: #fff;
+    font-weight: 600;
+}
+
+.outline {
+    color: var(--primary);
+    border-color: currentColor;
+
+    &:hover {
+        border-color: currentColor;
+        background-color: rgba(254, 44, 85, 0.06);
+    }
+}
+
+.text {
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+//Disabled
+
+//Button sizes
+
+.small {
+    width: 20%;
+    // padding: 14px 16px;
+}
+
+.medium {
+    width: 40%;
+    margin: 0;
+}
+
+.textWhite {
+    color: #fff;
+    font-weight: 600;
+}
+
+.large {
+    width: 80%;
+    padding: 10px 16px;
+}
+
+.transparent {
+    background-color: transparent;
+    color: #222;
+    font-weight: 500;
+    font-size: 17px;
+    border-radius: 0;
+
+    + .transparent {
+        margin-top: 0;
+    }
+}
+
+.active {
+    background-color: rgba(188, 10, 70, 0.7215686275);
+    color: #fff;
+}
+
+.activeAdmin {
+    color: #fff;
+    border-bottom: 1px solid;
+}

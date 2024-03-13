@@ -1,0 +1,162 @@
+.wrapper {
+    position: absolute;
+    inset: 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    //
+    // padding: 16px 24px 10px 20px;
+    background-color: #fff;
+
+    .header {
+        display: flex;
+        height: 50px;
+        justify-content: space-between;
+        padding: 15px;
+        background: #f8b4e7;
+        .status-header {
+            font-weight: 600;
+        }
+
+        .zoom-action {
+            cursor: pointer;
+        }
+    }
+
+    .body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex: 1 1;
+        width: 100%;
+        padding: 0px 0px 30px;
+        background: #f6e2f1;
+        // cursor: pointer;
+
+        .body-call {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+        }
+
+        // .main-call {
+
+        // }
+
+        .local-video {
+            // position: absolute;
+            // right: 20px;
+            // bottom: 0;
+            // z-index: 10;
+            // object-fit: fill;
+            position: fixed;
+        }
+
+        .remote-video {
+            // object-fit: fill;
+            // width: 50%;
+            // // width: 100%;
+            // // height: 100%;
+            position: fixed;
+        }
+
+        // .remote-video {
+        //     &.disconnected {
+        //         display: none;
+        //     }
+        // }
+
+        img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 1px solid #f51662;
+
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease-in-out;
+        }
+
+        .shadow-animation {
+            animation: shadowAnimation 1.5s ease-in-out infinite;
+        }
+
+        @keyframes shadowAnimation {
+            0% {
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            }
+            100% {
+                box-shadow: 0 16px 32px rgba(0, 0, 0, 0.4);
+            }
+        }
+
+        .fullname {
+            font-weight: 600;
+            margin-top: 10px;
+        }
+
+        .total-time {
+            color: #7b7178;
+        }
+    }
+
+    .footer {
+        padding-bottom: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #f6e2f1;
+
+        .call-icon {
+            cursor: pointer;
+            & + .call-icon {
+                margin-left: 25px;
+            }
+        }
+
+        .mic-call {
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            background: #fff;
+            cursor: pointer;
+        }
+
+        .phone-call {
+            display: flex;
+            align-items: center;
+            background: #ff443d;
+            color: #fff;
+            width: 50px;
+            height: 50px;
+            justify-content: center;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        .accept-call {
+            display: flex;
+            align-items: center;
+            background: green;
+            color: #fff;
+            width: 50px;
+            height: 50px;
+            justify-content: center;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        .phone-function {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}

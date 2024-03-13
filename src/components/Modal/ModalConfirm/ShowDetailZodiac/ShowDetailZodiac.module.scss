@@ -1,0 +1,44 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+
+    margin: 20px 0;
+}
+.header {
+    display: flex;
+    font-size: 15px;
+    align-items: center;
+}
+
+.name-zodiac {
+    margin-right: 25px;
+}
+.time-send {
+    font-style: italic;
+}
+.content {
+    margin-top: 10px;
+
+    textarea {
+        width: 420px;
+        outline: none;
+        border: rgb(255, 255, 255);
+        border-radius: 5px;
+        padding: 10px;
+        height: 127px;
+        resize: vertical;
+        border: 1px solid #da0d58;
+        background: #fff;
+
+        white-space: pre-line;
+    }
+}
+.footer {
+    margin-top: 10px;
+}
+.btn-post {
+    width: 100%;
+    color: #fff;
+    font-weight: 600;
+    background-color: #f882c1;
+}
